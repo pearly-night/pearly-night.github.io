@@ -28,8 +28,6 @@ let player;
         const [firstCommand] = commandsQueue;
         const [eventCode, eventType, parameters, additionalData] = firstCommand;
 
-        console.log(firstCommand)
-
         if (eventCode !== code) {
             return;
         }

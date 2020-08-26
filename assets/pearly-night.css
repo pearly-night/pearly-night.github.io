@@ -15,7 +15,7 @@ body {
 }
 
 #player {
-    /* display: none; */
+    display: none;
     position: absolute;
     bottom: 9.5rem;
     left: 4.5rem;
