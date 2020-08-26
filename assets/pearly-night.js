@@ -81,4 +81,26 @@ let player;
             events: { onReady, onStateChange }
         });
     };
+
+    window.addEventListener('keyup', event => {
+        if (event.key === ' ') {
+            const isPlaying = player.getPlayerState() === 1;
+            const isPausing = player.getPlayerState() === 2;
+
+            if (isPlaying) {
+                player.pauseVideo();
+            }
+
+            if (isPausing) {
+                player.playVideo();
+            }
+        }
+
+        if (event.shiftKey && event.key === 'Enter') {
+            const playerElement = document.querySelector('#player');
+            const isHidden = getComputedStyle(playerElement).display === 'none';
+
+            playerElement.style.display = isHidden ? 'block' : 'none';
+        }
+    })
 })();
