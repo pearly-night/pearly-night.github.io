@@ -1,0 +1,137 @@
+:root {
+    --title-motion-timing: 1s;
+    --indicator-motion-timing: .75s;
+}
+
+* {
+    text-rendering: geometricPrecision;
+    text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+}
+
+#player {
+    /* display: none; */
+    position: absolute;
+    bottom: 9.5rem;
+    left: 4.5rem;
+    z-index: 1;
+}
+
+#main {
+    width: calc(100vw - 9rem);
+    height: calc(100vh - 9rem);
+    margin: 1.5rem;
+    padding: 3rem;
+    background: transparent url('/assets/noizemasta.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 1.5rem;
+    perspective: 100vmax;
+    position: relative;
+}
+
+#main * {
+    user-select: none;
+    color: white;
+}
+
+#main header {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    left: 3rem;
+}
+
+#main header h1 {
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    font: 96pt/100% 'din-condensed', sans-serif;
+}
+
+#main header h1 img {
+    height: 14rem;
+}
+
+#main header #metadata {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-shadow: 0 1px 0.5px black;
+    font: normal normal 300 18pt/120% 'Noto Sans', 'Noto Sans KR', sans-serif;
+    letter-spacing: -1pt;
+}
+
+#main header #metadata .date {
+    font-weight: normal;
+}
+
+#main header #metadata .subtitle {
+    font-size: 14pt;
+}
+
+#main #indicator {
+    transition: transform var(--indicator-motion-timing) ease-in-out;
+    transform: translateZ(-1rem) rotateX(45deg);
+    transform-style: preserve-3d;
+    perspective-origin: center 1rem;
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    left: 3rem;
+    font: normal normal 500 24pt/100% 'Black Han Sans', sans-serif;
+    text-shadow: 0 1px 1px black;
+}
+
+#main #indicator,
+#main #indicator > * {
+    height: 2rem;
+}
+
+#main #indicator > * {
+    position: absolute;
+    transition: opacity var(--indicator-motion-timing) ease-in-out;
+}
+
+#main #indicator .when-speaking {
+    transform: rotateX(-45deg) translateZ(1rem);
+}
+
+#main #indicator .when-playing {
+    max-width: 100%;
+    overflow: hidden;
+    transform: rotateX(45deg) translateZ(1rem);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#main #indicator .when-playing::before {
+    content: 'Now Playing >';
+}
+
+#main #indicator .when-playing::after {
+    content: '';
+}
+
+#main #indicator .when-playing .artist-name::after {
+    content: ' - ';
+}
+
+#main #indicator.speaking {
+    transform: translateZ(-1rem) rotateX(45deg);
+}
+
+#main #indicator.playing {
+    transform: translateZ(-1rem) rotateX(-45deg);
+}
+
+#main #indicator.speaking .when-playing,
+#main #indicator.playing .when-speaking {
+    opacity: 0;
+}
