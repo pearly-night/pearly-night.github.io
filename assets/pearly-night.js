@@ -16,6 +16,14 @@ let player;
         return [index === 0 ? -1 : 0, 'LOAD', parameters, additionalData];
     });
 
+    function toSecond(time) {
+        if(typeof time === 'string') {
+            const splitTime = time.split(':');
+            return Number(splitTime[0]) * 60 + Number(splitTime[1])
+        }
+        return time;
+    }
+
     function onReady() {
         player.playVideo();
     }
