@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>세상이 대충 망한뒤 (2020 08 30) - 펄이 빛나는 밤</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean">
+    <link rel="stylesheet" href="/assets/pearly-night.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+</head>
+
+<body>
+    <script>
+        const information = {
+            pearlyNightId: 'Y6ufJa1aO4A',
+
+            playingData: [
+                { videoId: 'ZDoH5dQ58ps', artistName: '아이유', songName: '가을 아침' },
+                { start: 0, end: 72 }, <!--0 to 1:12-->
+                { videoId: 'YZCtAgN0RKQ', artistName: 'Clover', songName: '붉은 달' },
+                { start: 75, end: 104.5 }, <!--1:15.5 to 1:44.5-->
+                { videoId: 'cjwCFEzlzXs', artistName: '정우', songName: '나에게서 당신에게' },
+                { start: 109.5, end: 238 }, <!--1:49.5 to 3:58-->
+                { videoId: 'ZlWezv5Dpsg', artistName: '이소라', songName: 'Amen' },
+                { start: 241, end: 264.5 }, <!--4:01 to 4:24.5-->
+                { videoId: 'SN7ZDnkzsic', artistName: 'Joanna Wang', songName: 'Lost in Paradise' },
+                { start: 269, end: 401.5 },  <!--4:29 to 6:41.5-->
+                { videoId: 'S4zjsYPqeWE', artistName: '김아름', songName: '선 (Cross The Line)' },
+                { start: 406, end: 559 }, <!--6:46 to 9:19-->
+                { videoId: 'DPZ99hxi4-A', artistName: 'JP Saxe', songName: 'If the World Was Ending' },
+                { start: 562.5, end: 715 }, <!--9:22.5 to 11:55-->
+                { videoId: 'sKhOJThFLTA', artistName: 'Ryo Yonemitsu', songName: 'Seaside Dream' },
+                { start: 719.5, end: 839.5 }, <!--11:59.5 to 13:59.5-->
+                { videoId: 'Hsa8itxNkV4', artistName: 'Labrinth', songName: 'Don't Fence Me In' },
+                { start: 845, end: 1103.5 }, <!--14:05 to 18:23.5-->
+                { videoId: 'qXMV5uMufe4', artistName: '전람회', songName: '꿈속에서' },
+                { start: 1109.5, end: 1173 }, <!--18:29.5 to 19:33-->
+                { videoId: 'X4BcQ-rqFQc', artistName: 'HONNE', songName: 'by my side' },
+                { start: 1178, end: 1316.5 }, <!--19:38 to 21:56.5-->
+                { videoId: 'TBVETELcmv0', artistName: 'Feng Suave', songName: 'Venus Flytrap' },
+                { start: 1320, end: 1386.5 }, <!--22:00 to 23:06.5-->
+                { videoId: '_CzSCWpF7TM', artistName: 'Louie Zong', songName: 'Ghost Duet ' },
+                { start: 1391, end: 1463 }, <!--23:11 to 24:23-->
+                { videoId: 'SJUWooZnfVQ', artistName: '잔나비', songName: '꿈과 책과 힘과 벽' },
+                { start: 1467, end: 1615.5 }, <!--24:27 to 26:55.5-->
+                { videoId: 'DS6zS41tmWg', artistName: 'Phil Collins', songName: 'Separate Lives' },
+                { start: 1620, end: 1716 }, <!--27:00 to 28:36-->
+                { videoId: 'mNfenfHXMOA', artistName: '침펄X백예린', songName: '그건 아마 우리의 잘못은 아닐거야' },
+                { start: 1723, end: 1790 }, <!--28:43 to 29:50-->
+                { videoId: 'my1scE7lutk', artistName: 'José James', songName: 'Winterwind' },
+                { start: 1795, end: 1926.5 }, <!--29:55 to 32:06.5-->
+                { videoId: '_3Gwsd5idrc', artistName: '패닉', songName: '내 낡은 서랍 속의 바다' },
+                { start: 1932, end: 2049 }, <!--32:12 to 34:09-->
+                { videoId: 'G8A1kgFH1WQ', artistName: 'M Ost', songName: '나는 널 몰라' },
+                { start: 2055 }, <!--34:15-->
+                { videoId: 'Mll_zZ3eKO0', artistName: 'Justin Hurwitz', songName: 'Fletcher's Song In Club' }
+            ]
+        };
+    </script>
+
+    <div id="player"></div>
+    <div id="main">
+        <header>
+            <h1>
+                <img src="/assets/pearly-night.svg" alt="Pearly Night">
+            </h1>
+
+            <div id="metadata">
+                <div class="date">August 30th, 2020</div>
+                <div class="subtitle">세상이 대충 망한뒤</div>
+            </div>
+        </header>
+
+        <div id="indicator" class="speaking">
+            <div class="when-speaking">
+                <span>READY</span>
+            </div>
+
+            <div class="when-playing">
+                <span class="artist-name"></span>
+                <span class="song-name"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="/assets/pearly-night.js"></script>
+</body>
+
+</html>
