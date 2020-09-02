@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>학창시절 이야기 (2020 08 08) - 펄이 빛나는 밤</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean">
+    <link rel="stylesheet" href="/assets/pearly-night.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+</head>
+
+<body>
+    <script>
+        const information = {
+            pearlyNightId: 'TzhI7SDfiOo',
+
+            playingData: [
+               {  videoId : 'rjBW4yIURWE' ,  artistName : 'Phil X' ,  songName : 'Superstitions'  } ,
+                {  시작 : 0 ,  끝 : 122  } ,
+                {  videoId : '8WEtxJ4-sh4' ,  artistName : 'TLC' ,  songName : 'Waterfalls'  } ,
+                {  시작 : 126 ,  끝 : 436   } ,
+                {  videoId : 'DiKcYIx5drk' ,  artistName : '임세모' ,  songName : '청춘은 무슨'  } ,
+                {  시작 : 440 ,  끝 : 618  } ,
+                {  videoId : 'ZpKsgrCi0dM' ,  artistName : '이승열' ,  songName : '비상'  } ,
+                {  시작 : 625 ,  끝 : 751  } ,
+                {  videoId : 'jV127kNz0hs' ,  artistName : 'Carpenters' ,  songName : 'Close To You'  } ,
+                {  시작 : 757 ,  종료 : 927  } ,
+                {  videoId : 'Agq8t699IL8' ,  artistName : '전제덕' ,  songName : '바람'  } ,
+                {  시작 : 934 ,  종료 : 1155  } ,
+                {  videoId : 'o5CxL3CJmaM' ,  artistName : '심보라미' ,  songName : 'Cries of  Whispers' } ,
+                {  시작 : 1159 ,  종료 : 1341  } ,
+                {  videoId : 'kRfqsYQSSvY' ,  artistName : '전람회' ,  songName : '기억의  습작' } ,
+                {  시작 : 1348 ,  종료 : 1788  } ,
+                {  videoId : 'zraW-fU00zI' ,  artistName : '패닉' ,  songName : '달팽이' } ,
+                {  시작 : 1794.5 ,  종료 : 1946 } ,
+                {  videoId : 'wxRo9CZ8_vE' ,  artistName : '베이시스' ,  songName : '좋은 사람에게 소개 해줘'  } ,
+                {  시작 : 1952 ,  종료 : 2168  } ,
+                {  videoId : 't6P7En-ko0E' ,  artistName : '제이레빗' ,  songName : '바람이 불어 오는 곳'  } ,
+                {  시작 : 2172 ,  종료 : 2340  } ,
+                {  videoId : 'O2XCJEShIxY' ,  artistName : 'Chet Baker' ,  songName : 'Tenderly'  } ,
+                {  시작 : 2344 ,  종료 : 2471  } ,
+                {  videoId : '9W5FdJIzET0' ,  artistName : 'Carla Bruni' ,  songName : 'Moon River'  } ,
+                {  시작 : 2477 ,  끝 : 2655  } ,
+                {  videoId : 'qarnzcRbPMk' ,  artistName : 'Don McLean' ,  songName : 'And I Love You So'  } ,
+                {  시작 : 2657  } ,
+                {  videoId : 'GIQn8pab8Vc' ,  artistName : 'R. Kelly ' ,  songName : 'I Believe I Can Fly (꾸키곡) '  }
+            ]
+        };
+    </script>
+
+    <div id="player"></div>
+    <div id="main">
+        <header>
+            <h1>
+                <img src="/assets/pearly-night.svg" alt="Pearly Night">
+            </h1>
+
+            <div id="metadata">
+                <div class="date">August 24th, 2020</div>
+                <div class="subtitle"></div>
+            </div>
+        </header>
+
+        <div id="indicator" class="speaking">
+            <div class="when-speaking">
+                <span>READY</span>
+            </div>
+
+            <div class="when-playing">
+                <span class="artist-name"></span>
+                <span class="song-name"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="/assets/pearly-night.js"></script>
+</body>
+
+</html>
